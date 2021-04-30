@@ -9,7 +9,7 @@
     height: 100%;
     background: url('images/img_1.jpg') center;
     background-size: cover;
-    overflow-y: hidden;
+   // overflow-y: hidden;
     color: white;
 }
 
@@ -40,7 +40,7 @@ button {
 
 .header {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 8%;
     h1 {
         font-size: 60px;
@@ -51,11 +51,25 @@ button {
 
 .side-bar {
     width: 50px;
-    height: 100vh;
-    background: linear-gradient(to right, rgb(84, 66, 243), #0d2495);
+    height: 100%;
+    background: linear-gradient(to right, rgba(84, 66, 243, 0.075), #0d249544);
     position: absolute;
     right: 0;
     top: 0;
+    img {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 30%;
+        padding: 18px 10px;
+        cursor: pointer;
+        transition: .8s;
+        &:hover {
+            transform: translateY(30px);
+            background-color: rgba(141, 136, 136, 0.411);
+            border-radius: .8em;
+        }
+    }
 }
 
  .bubble {
@@ -64,7 +78,7 @@ button {
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    bottom: -70px;
+    bottom: 0;
     cursor: pointer;
     img {
         width: 50px;
@@ -119,7 +133,7 @@ button {
     }
     100% {
         transform: translateY(-80vh);
-        opacity: 1;
+        opacity: 0;
         transition: ease-in-out;
     }
 }
