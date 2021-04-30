@@ -30,7 +30,11 @@ button {
   .navbar h3 {
     color: white;
     font-size: 18px;
-    padding: 15px; }
+    padding: 10px;
+    background-color: #1eadf0;
+    border-radius: .8em;
+    cursor: pointer;
+    animation: brand 7.5s linear infinite; }
 
 .header {
   position: absolute;
@@ -109,7 +113,16 @@ button {
     transform: translateY(-80vh);
     opacity: 0;
     transition: ease-in-out; } }
-.img {
-  background-color: green; }
+@keyframes brand {
+  0% {
+    transform: translateY(-30px);
+    transition: ease-in-out;
+    opacity: 0; }
+  70% {
+    opacity: 1; }
+  100% {
+    transform: translateY(30vh);
+    opacity: 0;
+    transition: ease-in-out; } }
 
 /*# sourceMappingURL=style.css.map */
